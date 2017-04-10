@@ -22,23 +22,13 @@ public class AppConfig extends WebMvcConfigurerAdapter {
   @Bean
   public ViewResolver viewResolver() {
     InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-
-    //viewResolver.setViewClass(JstlView.class);
     viewResolver.setPrefix("/WEB-INF/views/jsp/");
     viewResolver.setSuffix(".jsp");
-
     return viewResolver;
   }
-//
-//  @Bean
-//  public MessageSource messageSource() {
-//    ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-//    messageSource.setBasename("messages");
-//    return messageSource;
-//  }
+  @Override
+  public void addResourceHandlers(final ResourceHandlerRegistry registry) {
+    registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+  }
 
-    @Override
-    public void addResourceHandlers(final ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
-    }
 }

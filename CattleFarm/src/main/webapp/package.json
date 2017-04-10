@@ -1,0 +1,27 @@
+{
+  "name": "bilal_cattle_farm",
+  "version": "1.0.0",
+  "description": "Bilal Cattle Farm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahirakhan/bilal_cattle_farm_be.git"
+  },
+  "author": "Tahir Ali Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tahirakhan/bilal_cattle_farm_be/issues"
+  },
+  "homepage": "https://github.com/tahirakhan/bilal_cattle_farm_be#readme",
+  "devDependencies": {
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-less": "^3.3.0",
+    "main-bower-files": "^2.13.1"
+  },
+  "dependencies": {}
+}
